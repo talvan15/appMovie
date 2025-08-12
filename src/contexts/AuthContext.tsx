@@ -108,7 +108,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const logout = async () => {
     try {
-       console.log("Chamando logout...");
+      console.log("Chamando logout...");
       // Limpar dados do AsyncStorage
       await StorageService.clearAuthData();
 
@@ -124,6 +124,11 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const addToWatchlist = async (movieId: string) => {
     if (user) {
+      // Evitar duplicatas
+      if (user.watchlist.includes(movieId)) {
+        return;
+      }
+
       const updatedUser = {
         ...user,
         watchlist: [...user.watchlist, movieId],

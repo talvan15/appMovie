@@ -31,8 +31,6 @@ export default function HomeScreen() {
     upcomingMovies,
     loading,
     error,
-    refreshMovies,
-    // pagination
     loadingMore,
     loadMorePopular,
     loadMoreTopRated,
@@ -189,13 +187,6 @@ export default function HomeScreen() {
             loadMoreForSelectedCategory();
           }
         }}
-        ListFooterComponent={
-          loadingMore ? (
-            <View style={{ paddingVertical: 16 }}>
-              <ActivityIndicator size="small" color="#ffffff" />
-            </View>
-          ) : null
-        }
       />
     </SafeAreaView>
   );

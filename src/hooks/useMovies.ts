@@ -96,7 +96,7 @@ export const useMovies = () => {
       setFeaturedMovies(convertedTopRated.slice(0, 5)); // Em destaque (top 5)
       setTopRatedMovies(convertedTopRated); // Melhores (todos)
       setUpcomingMovies(convertedUpcoming); // Estreias
-      setNewMovies(convertedUpcoming.slice(0, 20)); // Novos (primeiros 20 das estreias)
+      setNewMovies(convertedUpcoming); // Novos (primeiros 20 das estreias)
 
       // resetar paginações
       setPopularPage(1);
