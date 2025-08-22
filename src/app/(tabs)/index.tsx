@@ -166,7 +166,7 @@ export default function HomeScreen() {
       ? loadMoreTopRated
       : selectedCategory === "Popular"
       ? loadMorePopular
-      : loadMoreUpcoming; // "Novo" e "Estreias" usam upcoming
+      : loadMoreUpcoming;
 
   return (
     <SafeAreaView style={styles.container}>

@@ -6,10 +6,37 @@ Um aplicativo de listagem de filmes desenvolvido com React Native, TypeScript e 
 
 - **Autenticação**: Sistema de login e cadastro de usuários
 - **Home**: Tela principal com filmes em destaque e categorias
-- **Pesquisa**: Busca por filmes por título, gênero ou ator
+- **Pesquisa**: Busca por filmes por título ou gênero
 - **Watchlist**: Lista de filmes favoritos do usuário
 - **Detalhes**: Tela completa com informações do filme
 - **Navegação**: Sistema de tabs na parte inferior
+
+## 🔧 Tecnologias Utilizadas
+
+- **React Native**: Framework principal
+- **TypeScript**: Tipagem estática
+- **Expo**: Plataforma de desenvolvimento
+- **Expo Router**: Navegação baseada em arquivos
+- **TMDB API**: Dados reais de filmes
+- **React Hooks**: Gerenciamento de estado e efeitos
+
+## 📱 Navegação
+
+O app utiliza o **Expo Router** com a seguinte estrutura:
+
+- **Auth Stack**: Login e registro
+- **Tabs Stack**: Home, pesquisa e watchlist
+- **Movie Stack**: Detalhes do filme
+
+## 🔐 Autenticação
+
+Sistema de autenticação simulado com:
+
+- Contexto React para estado global
+- Funções de login/registro
+- Gerenciamento de watchlist por usuário
+- Navegação condicional baseada no estado de autenticação
+
 
 ## 🏗️ Estrutura do Projeto
 
@@ -142,33 +169,6 @@ npm run lint       # Executa o linter
 - Pequeno: 8px
 - Grande: 24px
 
-## 🔧 Tecnologias Utilizadas
-
-- **React Native**: Framework principal
-- **TypeScript**: Tipagem estática
-- **Expo**: Plataforma de desenvolvimento
-- **Expo Router**: Navegação baseada em arquivos
-- **React Navigation**: Navegação entre telas
-- **Expo Vector Icons**: Ícones do sistema
-- **TMDB API**: Dados reais de filmes
-- **React Hooks**: Gerenciamento de estado e efeitos
-
-## 📱 Navegação
-
-O app utiliza o **Expo Router** com a seguinte estrutura:
-
-- **Auth Stack**: Login e registro
-- **Tabs Stack**: Home, pesquisa e watchlist
-- **Movie Stack**: Detalhes do filme
-
-## 🔐 Autenticação
-
-Sistema de autenticação simulado com:
-
-- Contexto React para estado global
-- Funções de login/registro
-- Gerenciamento de watchlist por usuário
-- Navegação condicional baseada no estado de autenticação
 
 ## 🎬 Integração TMDB API
 
